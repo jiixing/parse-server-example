@@ -6,6 +6,7 @@ import { ParseServer } from 'parse-server';
 import path from 'path';
 import http from 'http';
 import { config } from './config.js';
+import { startParseDashboard } from './parse-dashboard.js';
 const __dirname = path.resolve();
 const app = express();
 
@@ -36,4 +37,6 @@ httpServer.listen(port, function () {
 });
 // This will enable the Live Query real-time server
 await ParseServer.createLiveQueryServer(httpServer);
+
+await startParseDashboard(app);
 console.log(`Visit http://localhost:${port}/test to check the Parse Server`);
