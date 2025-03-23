@@ -1,0 +1,11 @@
+from https://github.com/open-inc/node-parse-server-schema/commits/master/
+
+
+1.7.12 on Feb 6 2025
+
+forked to
+https://github.com/jiixing/node-parse-server-schema
+
+we also have another package.json here for ts-node
+
+installing it at the root seem to have problem

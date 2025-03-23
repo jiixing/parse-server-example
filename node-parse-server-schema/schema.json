@@ -1,0 +1,199 @@
+[
+  {
+    "className": "TestObject",
+    "fields": {
+      "additionalData": {
+        "type": "String"
+      },
+      "beforeSave": {
+        "type": "Boolean",
+        "defaultValue": false
+      }
+    },
+    "classLevelPermissions": {
+      "find": {
+        "*": true
+      },
+      "count": {
+        "*": true
+      },
+      "get": {
+        "*": true
+      },
+      "create": {
+        "*": true
+      },
+      "update": {
+        "*": true
+      },
+      "delete": {
+        "*": true
+      },
+      "addField": {},
+      "protectedFields": {}
+    }
+  },
+  {
+    "className": "Todo",
+    "fields": {
+      "name": {
+        "type": "String"
+      }
+    },
+    "classLevelPermissions": {
+      "find": {
+        "*": true
+      },
+      "count": {
+        "*": true
+      },
+      "get": {
+        "*": true
+      },
+      "create": {
+        "*": true
+      },
+      "update": {
+        "*": true
+      },
+      "delete": {
+        "*": true
+      },
+      "addField": {
+        "*": true
+      },
+      "protectedFields": {
+        "*": []
+      }
+    }
+  },
+  {
+    "className": "_Role",
+    "fields": {
+      "name": {
+        "type": "String"
+      },
+      "roles": {
+        "type": "Relation",
+        "targetClass": "_Role"
+      },
+      "users": {
+        "type": "Relation",
+        "targetClass": "_User"
+      }
+    },
+    "classLevelPermissions": {
+      "find": {
+        "*": true
+      },
+      "count": {
+        "*": true
+      },
+      "get": {
+        "*": true
+      },
+      "create": {
+        "*": true
+      },
+      "update": {
+        "*": true
+      },
+      "delete": {
+        "*": true
+      },
+      "addField": {},
+      "protectedFields": {
+        "*": []
+      }
+    }
+  },
+  {
+    "className": "_Session",
+    "fields": {
+      "createdWith": {
+        "type": "Object"
+      },
+      "expiresAt": {
+        "type": "Date"
+      },
+      "installationId": {
+        "type": "String"
+      },
+      "sessionToken": {
+        "type": "String"
+      },
+      "user": {
+        "type": "Pointer",
+        "targetClass": "_User"
+      }
+    },
+    "classLevelPermissions": {
+      "find": {
+        "*": true
+      },
+      "count": {
+        "*": true
+      },
+      "get": {
+        "*": true
+      },
+      "create": {
+        "*": true
+      },
+      "update": {
+        "*": true
+      },
+      "delete": {
+        "*": true
+      },
+      "addField": {},
+      "protectedFields": {
+        "*": []
+      }
+    }
+  },
+  {
+    "className": "_User",
+    "fields": {
+      "authData": {
+        "type": "Object"
+      },
+      "email": {
+        "type": "String"
+      },
+      "emailVerified": {
+        "type": "Boolean"
+      },
+      "password": {
+        "type": "String"
+      },
+      "username": {
+        "type": "String"
+      }
+    },
+    "classLevelPermissions": {
+      "find": {
+        "*": true
+      },
+      "count": {
+        "*": true
+      },
+      "get": {
+        "*": true
+      },
+      "create": {
+        "*": true
+      },
+      "update": {
+        "*": true
+      },
+      "delete": {
+        "*": true
+      },
+      "addField": {},
+      "protectedFields": {
+        "*": []
+      }
+    }
+  }
+]
