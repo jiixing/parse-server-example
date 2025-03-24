@@ -1,5 +1,5 @@
 // Initialize Parse SDK
-Parse.initialize('myAppId');
+Parse.initialize('myAppId','YOUR_JAVASCRIPT_KEY');
 Parse.serverURL = `${window.location.origin}/parse`;
 
 /**
@@ -62,7 +62,7 @@ const postData = async () => {
   try {
     const gameScore = new Parse.Object('GameScore');
     gameScore.set('score', 1337);
-    gameScore.set('playerName', 'Sean Plott');
+    gameScore.set('playerName', 'arteezy');
     gameScore.set('cheatMode', false);
 
     const result = await gameScore.save();
